@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Untuk Rara Sang Pujaan Hatiku 💕✨</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap');
+  
+  * { box-sizing: border-box; }
+  body {
+    margin:0; font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+    color:#2c1810; text-align:center; overflow-x:hidden; min-height: 100vh;
+  }
+  
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .container {
+    max-width: 900px; margin: auto; padding: 20px;
+    background: rgba(255,255,255,0.95); border-radius: 25px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+    margin-top: 20px; margin-bottom: 50px;
+  }
+  
+  h1 {
+    font-family: 'Dancing Script', cursive; font-size: 3.5em; margin: 20px 0;
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24, #ff3838);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: titlePulse 3s ease-in-out infinite;
+  }
+  
+  @keyframes titlePulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+  
+  .photo-frame {
+    width: 200px; height: 200px; margin: 20px auto;
+    border-radius: 50%; overflow: hidden;
+    border: 8px solid #ff6b6b;
+    box-shadow: 0 10px 30px rgba(255,107,107,0.4);
+    position: relative;
+    animation: photoGlow 4s ease-in-out infinite;
+  }
+  
+  @keyframes photoGlow {
+    0%, 100% { box-shadow: 0 10px 30px rgba(255,107,107,0.4); }
+    50% { box-shadow: 0 15px 40px rgba(255,107,107,0.8); }
+  }
+  
+  .photo-placeholder {
+    width: 100%; height: 100%; 
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 4em; color: white;
+    cursor: pointer; transition: all 0.3s;
+  }
+  
+  .photo-placeholder:hover {
+    transform: scale(1.1);
+  }
+  
+  .couple-photo {
+    width: 100%; height: 100%; object-fit: cover;
+  }
+  
+  .heart {
+    position:fixed; animation: floatHeart 6s infinite ease-in-out; 
+    font-size: 25px; z-index: 1000;
+  }
+  
+  @keyframes floatHeart {
+    0% {transform: translateY(100vh) rotate(0deg) scale(0.5); opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {transform: translateY(-20vh) rotate(360deg) scale(1.5); opacity:0;}
+  }
+  
+  .message-box {
+    font-size: 1.2em; line-height: 1.8; padding: 30px;
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    border-radius: 20px; margin: 20px 0;
+    box-shadow: 0 8px 25px rgba(252,182,159,0.3);
+    position: relative; overflow: hidden;
+  }
+  
+  .message-box::before {
+    content: ''; position: absolute; top: -50%; left: -50%;
+    width: 200%; height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+    transform: rotate(45deg);
+    animation: shine 3s infinite;
+  }
+  
+  @keyframes shine {
+    0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+    100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+  }
+  
+  .btn {
+    display: inline-block; margin: 10px; padding: 15px 30px;
+    font-size: 1.1em; font-weight: 600; cursor: pointer;
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    color: #fff; border: none; border-radius: 50px;
+    transition: all 0.3s; text-decoration: none;
+    box-shadow: 0 5px 15px rgba(255,107,107,0.4);
+    transform: translateY(0);
+  }
+  
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255,107,107,0.6);
+  }
+  
+  .btn:active {
+    transform: translateY(0);
+  }
+  
+  #count {
+    font-size: 2.2em; font-weight: 600; margin: 25px 0;
+    color: #e74c3c;
+    text-shadow: 2px 2px 4px rgba(231,76,60,0.3);
+    animation: countPulse 2s ease-in-out infinite;
+  }
+  
+  @keyframes countPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+  
+  .quote-display {
+    margin: 20px 0; padding: 20px;
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    border-radius: 15px; font-style: italic;
+    font-size: 1.2em; min-height: 60px;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 5px 15px rgba(168,237,234,0.3);
+  }
+  
+  .bucin-meter {
+    margin: 30px 0; padding: 20px;
+    background: rgba(255,182,193,0.3);
+    border-radius: 15px;
+  }
+  
+  .meter-bar {
+    width: 100%; height: 20px;
+    background: #f0f0f0; border-radius: 10px; overflow: hidden;
+    position: relative;
+  }
+  
+  .meter-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #ff6b6b, #ee5a24, #ff3838);
+    border-radius: 10px;
+    animation: meterFill 3s ease-out;
+  }
+  
+  @keyframes meterFill {
+    0% { width: 0%; }
+    100% { width: 100%; }
+  }
+  
+  .floating-elements {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    pointer-events: none; z-index: 1;
+  }
+  
+  .kiss-emoji {
+    position: absolute; font-size: 30px;
+    animation: floatKiss 8s infinite linear;
+    opacity: 0.7;
+  }
+  
+  @keyframes floatKiss {
+    0% { transform: translateX(-100px) rotate(0deg); }
+    100% { transform: translateX(calc(100vw + 100px)) rotate(360deg); }
+  }
+  
+  .love-declaration {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8em; color: #c0392b; margin: 20px 0;
+    text-shadow: 1px 1px 2px rgba(192,57,43,0.3);
+  }
+  
+  .modal {
+    display: none; position: fixed; top: 0; left: 0;
+    width: 100%; height: 100%; background: rgba(0,0,0,0.8);
+    z-index: 10000; justify-content: center; align-items: center;
+    padding: 20px; box-sizing: border-box;
+    overflow-y: auto;
+  }
+  
+  .modal-content {
+    background: white; padding: 30px; border-radius: 20px;
+    max-width: 90vw; width: 100%; max-height: 80vh;
+    margin: auto; text-align: center;
+    position: relative; animation: modalPop 0.5s ease-out;
+    overflow-y: auto; box-sizing: border-box;
+  }
+  
+  @keyframes modalPop {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  .close-btn {
+    position: absolute; top: 15px; right: 20px;
+    font-size: 30px; cursor: pointer; color: #999;
+  }
+  
+  .close-btn:hover { color: #333; }
+  
+  .romantic-btn {
+    background: linear-gradient(45deg, #f093fb, #f5576c);
+    animation: romanticGlow 2s ease-in-out infinite;
+  }
+  
+  @keyframes romanticGlow {
+    0%, 100% { box-shadow: 0 5px 15px rgba(240,147,251,0.4); }
+    50% { box-shadow: 0 10px 30px rgba(240,147,251,0.8); }
+  }
+  
+  /* Mobile Responsive Styles */
+  @media (max-width: 768px) {
+    .container {
+      margin: 10px; padding: 15px; border-radius: 20px;
+    }
+    
+    h1 {
+      font-size: 2.5em; margin: 15px 0;
+      line-height: 1.2;
+    }
+    
+    .photo-frame {
+      width: 150px; height: 150px; margin: 15px auto;
+      border-width: 6px;
+    }
+    
+    .photo-placeholder {
+      font-size: 3em;
+    }
+    
+    #count {
+      font-size: 1.6em; margin: 20px 0;
+      line-height: 1.3;
+    }
+    
+    .message-box {
+      font-size: 1.1em; padding: 20px; margin: 15px 0;
+    }
+    
+    .love-declaration {
+      font-size: 1.5em; line-height: 1.4;
+    }
+    
+    .btn {
+      display: block; width: 80%; margin: 10px auto;
+      padding: 12px 20px; font-size: 1em;
+    }
+    
+    .quote-display {
+      font-size: 1.1em; padding: 15px; margin: 15px 0;
+      min-height: 50px;
+    }
+    
+    .bucin-meter {
+      margin: 20px 0; padding: 15px;
+    }
+    
+    .bucin-meter h3 {
+      font-size: 1.3em; margin-bottom: 15px;
+    }
+    
+    .modal-content {
+      padding: 20px; max-width: 95vw; max-height: 85vh;
+      border-radius: 15px;
+    }
+    
+    .modal-content h2 {
+      font-size: 1.8em; margin-bottom: 15px;
+    }
+    
+    .close-btn {
+      top: 10px; right: 15px; font-size: 25px;
+    }
+    
+    .heart {
+      font-size: 20px;
+    }
+    
+    .kiss-emoji {
+      font-size: 25px;
+    }
+    
+    .floating-elements .kiss-emoji:nth-child(3),
+    .floating-elements .kiss-emoji:nth-child(4) {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      margin: 5px; padding: 10px;
+    }
+    
+    h1 {
+      font-size: 2.2em; margin: 10px 0;
+    }
+    
+    .photo-frame {
+      width: 120px; height: 120px; margin: 10px auto;
+      border-width: 4px;
+    }
+    
+    .photo-placeholder {
+      font-size: 2.5em;
+    }
+    
+    #count {
+      font-size: 1.4em; margin: 15px 0;
+    }
+    
+    .message-box {
+      font-size: 1em; padding: 15px; margin: 10px 0;
+    }
+    
+    .love-declaration {
+      font-size: 1.3em;
+    }
+    
+    .btn {
+      width: 90%; padding: 10px 15px; font-size: 0.95em;
+    }
+    
+    .quote-display {
+      font-size: 1em; padding: 12px;
+    }
+    
+    .modal-content {
+      padding: 15px; max-height: 90vh;
+    }
+    
+    .modal-content h2 {
+      font-size: 1.6em; margin-bottom: 10px;
+    }
+    
+    .bucin-meter h3 {
+      font-size: 1.2em;
+    }
+    
+    .heart {
+      font-size: 18px;
+    }
+    
+    .kiss-emoji {
+      font-size: 20px;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="floating-elements">
+  <div class="kiss-emoji" style="top: 10%; animation-delay: 0s;">💋</div>
+  <div class="kiss-emoji" style="top: 30%; animation-delay: 2s;">💕</div>
+  <div class="kiss-emoji" style="top: 50%; animation-delay: 4s;">💖</div>
+  <div class="kiss-emoji" style="top: 70%; animation-delay: 6s;">🥰</div>
+</div>
+
+<div class="container">
+  <h1>Untuk Raraaa Sanggg Pujaannn Hatikuuu 💕✨</h1>
+  
+  <div class="photo-frame">
+    <div class="photo-placeholder">
+      <img src="rara.jpg" alt="rara" class="couple-photo">
+    </div>
+  </div>
+  
+  <div id="count"></div>
+  
+  <div class="bucin-meter">
+    <h3>Level Kebucinan Aku ke Kamu 📊💖</h3>
+    <div class="meter-bar">
+      <div class="meter-fill" style="width: 100%;"></div>
+    </div>
+    <p><strong>STATUS: BUCIN AKUT LEVEL MAKSIMAL!</strong> 🤒💕</p>
+  </div>
+  
+  <div class="message-box" id="loveMsg">
+    <div class="love-declaration">
+      "Kamu tau ga? Aku tuh bucin banget sama kamu sampai-sampai WiFi tetangga aja aku rela bajak demi chatan sama kamu! 📱💕"
+    </div>
+    <p>Sayangku yang paling gemesin di muka bumi ini, meski jarak memisahkan kita ribuan kilometer, tapi cinta aku ke kamu tuh udah menembus dimensi! Serius! Bahkan alien aja tau kalau aku sayang banget sama kamu! 👽💖</p>
+    <p>Setiap hari tanpa pelukan kamu tuh rasanya kayak makan indomie tanpa bumbu - hambar bangetttt! Tapi tenang sayang, aku akan terus nunggu kamu sampai rambut aku memutih (eh tapi jangan lama-lama ya, nanti aku jadi kakek bucin 👴💕)</p>
+  </div>
+  
+  <button class="btn" onclick="showLetter()">📝 Baca Surat Cinta Bucin</button>
+  <button class="btn" onclick="randomQuote()">💬 Gombal Hari Ini</button>
+  <button class="btn romantic-btn" onclick="showRomantic()">💖 Pesan Romantis Khusus</button>
+  
+  <div class="quote-display" id="quote">
+    Klik "Gombal Hari Ini" untuk dosis harian keromantisan! 💕
+  </div>
+</div>
+
+<!-- Modal untuk surat cinta -->
+<div class="modal" id="letterModal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('letterModal')">&times;</span>
+    <h2 style="color: #e74c3c; font-family: 'Dancing Script', cursive;">Surat Cinta Bucin Dariku 💌</h2>
+    <div id="letterContent"></div>
+  </div>
+</div>
+
+<!-- Modal untuk pesan romantis -->
+<div class="modal" id="romanticModal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('romanticModal')">&times;</span>
+    <h2 style="color: #f5576c; font-family: 'Dancing Script', cursive;">Pesan Romantis Khusus Untuk Kamu 💖✨</h2>
+    <div id="romanticContent"></div>
+  </div>
+</div>
+
+<input type="file" id="photoInput" accept="image/*" style="display: none;" onchange="handlePhotoUpload(event)">
+
+<script>
+  const anniversary = '2025-07-13'; // Ganti dengan tanggal jadian kalian
+  
+  function updateDays() {
+    const start = new Date(anniversary);
+    const today = new Date();
+    const diff = Math.floor((today - start)/(1000*60*60*24));
+    const years = Math.floor(diff / 365);
+    const months = Math.floor((diff % 365) / 30);
+    const days = diff % 30;
+    
+    let timeString = '';
+    if (years > 0) timeString += `${years} tahun `;
+    if (months > 0) timeString += `${months} bulan `;
+    timeString += `${days} hari`;
+    
+    document.getElementById('count').innerHTML = `
+      Kita udah bucin-bucinan selama<br>
+      <span style="font-size: 1.2em; color: #c0392b;">${timeString}</span><br>
+      <small style="font-size: 0.7em;">dan masih terus berlanjut! 💕</small>
+    `;
+  }
+  
+  // Heart animation yang lebih kece
+  const createHearts = () => {
+    const heartTypes = ['❤️', '💖', '💕', '💗', '💓', '💝', '💘', '🥰', '😍', '🤗'];
+    const heart = document.createElement('div');
+    heart.className = 'heart';
+    heart.style.left = Math.random() * 100 + 'vw';
+    heart.style.color = ['#ff6b6b', '#ee5a24', '#ff3838', '#e74c3c', '#c0392b'][Math.floor(Math.random()*5)];
+    heart.textContent = heartTypes[Math.floor(Math.random() * heartTypes.length)];
+    heart.style.animationDuration = (Math.random() * 3 + 4) + 's';
+    heart.style.animationDelay = Math.random() * 2 + 's';
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 7000);
+  };
+  
+  setInterval(createHearts, 500);
+  
+  // Surat cinta yang super bucin
+  const loveLetters = [
+    `Hai kesayangan hati yang bikin aku ga bisa tidur (bukan karena insomnia, tapi karena kangen! 😂💕),
+
+Tau ga sih? Aku tuh udah level bucin yang parah banget. Sampai-sampai liat kucing aja aku inget kamu karena sama-sama gemesin! 😸💖
+
+Setiap malam aku selalu ngedoain semoga mimpi kamu indah, tapi jangan terlalu indah sampai ga mau bangun ya, soalnya aku pengen video call sama kamu! 📱✨
+
+Btw, aku udah ngerencanain masa depan kita lho:
+- Tahun depan: Aku mau peluk kamu sampai kamu sesek nafas (tapi yang sayang ya bukan yang jahat 😂)
+- 2 tahun lagi: Kita jalan-jalan ke tempat yang romantis (yang penting ada WiFi buat upload foto couple kita! 📸)
+- 5 tahun lagi: Aku mau nikah sama kamu terus bikin rumah tangga yang bucin abis! 💑
+
+Pokoknya intinya, kamu tuh udah jadi candu aku. Bahkan lebih berbahaya dari kecanduan drakor! 😱💕
+
+Love you to the moon and back and to the moon again and back again (pokoknya bolak-balik terus deh! 🌙)
+
+Your bucin partner forever,
+❤️💕✨`,
+
+    `Cintaku yang paling precious di seluruh alam semesta! 🌌💖
+
+Aku mau confess sesuatu nih... Aku tuh bucin banget sama kamu sampai-sampai:
+- Liat bulan inget kamu (romantis kan? 🌙)
+- Liat matahari inget kamu (wah makin romantis! ☀️)
+- Liat lampu juga inget kamu (eh ini mah lebay 😂)
+
+Tapi serius sayang, kamu tuh udah jadi vitamin harian aku. Tanpa kamu, aku kayak HP yang batere-nya drop terus menerus! 🔋📱
+
+Aku janji deh, begitu kita ketemu nanti, aku bakal:
+1. Peluk kamu selama 10 menit non-stop (prepare diri kamu ya! 🤗)
+2. Cium kening kamu sambil bilang "finally!" (romantic ga? 😘)
+3. Foto couple sampe memory HP penuh (penting nih buat flexing! 📸)
+
+Oh iya, fun fact: Sejak kenal kamu, aku jadi rajin senyum sendiri. keluarga juga udah pada curiga aku stress, padahal aku lagi bahagia! 😂💕
+
+Keep being amazing, my sunshine! ✨
+
+Forever yours (literally forever, no return policy!),
+Your most loyal admirer 💕👑`
+  ];
+  
+  function showLetter() {
+    const randomLetter = loveLetters[Math.floor(Math.random() * loveLetters.length)];
+    document.getElementById('letterContent').innerHTML = 
+      `<div style="text-align: left; font-size: 1.1em; line-height: 1.8; white-space: pre-line; max-height: none; overflow-y: visible;">${randomLetter}</div>`;
+    document.getElementById('letterModal').style.display = 'flex';
+    
+    // Prevent body scroll when modal is open
+    document.body.style.overflow = 'hidden';
+  }
+  
+  // Quotes gombal yang kece
+  const quotes = [
+    '"Kamu tau ga? Aku tuh bucin sama kamu level dewa. Bahkan dukun aja ga sanggup ngobatin! 🤣💕"',
+    '"Jarak kita emang jauh, tapi cinta aku ke kamu lebih jauh dari jarak bumi ke pluto! 🪐💖"',
+    '"Kamu adalah WiFi aku. Tanpa kamu, hidup aku ga ada koneksi! 📶❤️"',
+    '"Seandainya rindu punya bentuk, rumah aku udah penuh sama patung kamu! 🏠💭"',
+    '"Kamu tuh kayak Google. Apapun yang aku cari, ujung-ujungnya ketemu kamu! 🔍💕"',
+    '"Aku rela jadi siput demi bisa nempel terus sama kamu! 🐌💖"',
+    '"Kamu adalah screenshot terbaik di galeri hati aku! 📸💕"',
+    '"Jarak cuma angka, tapi bucin aku ke kamu ga ada batasnya! ∞💖"',
+    '"Kamu tuh kayak drama Korea, bikin aku nagih dan ga bisa move on! 📺❤️"',
+    '"Serius deh, kamu udah jadi home screen hati aku! 📱💕"',
+    '"Kalau kangen ada level-nya, aku udah level maksimal ke kamu! 📊💖"',
+    '"Kamu adalah typo terindah di kehidupan aku yang penuh kesalahan! ✍️💕"'
+  ];
+  
+  function randomQuote() {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    document.getElementById('quote').innerHTML = quotes[randomIndex];
+    // Animasi quote
+    document.getElementById('quote').style.transform = 'scale(1.1)';
+    setTimeout(() => {
+      document.getElementById('quote').style.transform = 'scale(1)';
+    }, 300);
+  }
+  
+  // Pesan romantis khusus
+  function showRomantic() {
+    const romanticMessages = [
+      `💖 My Dearest Rara,
+
+Kamu tau ga sih betapa beruntungnya aku bisa mengenal kamu? Setiap hari bersamamu (meskipun lewat chat) adalah anugerah terindah yang pernah aku terima dari alam semesta. ✨
+
+Senyummu adalah matahari yang menerangi hari-hari kelabuku. Tawamu adalah melodi terindah yang selalu berputar di kepala aku. Dan kehadiranmu dalam hidupku adalah keajaiban yang ga akan pernah bisa aku ungkapkan dengan kata-kata. 🌟
+
+Aku berjanji akan selalu menjaga hatimu dengan penuh cinta dan kelembutan. Akan selalu ada untukmu di saat senang maupun sedih. Karena kamu bukan hanya pacarku, tapi juga sahabat terbaiku, tempat pulang hati aku. 🏡💕
+
+Distance means nothing when someone means everything to you. Dan kamu, sayang... kamu adalah segalanya buat aku. 💖
+
+With all my love and endless devotion,
+Your forever person ❤️✨`,
+
+      `🌹 To My Beautiful Rara,
+
+Setiap malam sebelum tidur, aku selalu bersyukur kepada Tuhan karena telah mempertemukanku dengan seseorang yang se-perfect kamu. Kamu adalah jawaban dari semua doa-doa aku. 🙏💕
+
+Kamu mengajarkan aku arti cinta yang sesungguhnya - bukan hanya tentang kebahagiaan, tapi juga tentang kesabaran, pengertian, dan komitmen. Bersamamu, aku belajar menjadi versi terbaik dari diriku sendiri. 🌱✨
+
+Mata indahmu adalah jendela surga yang selalu ingin aku lihat setiap hari. Suaramu adalah lagu pengantar tidur termanis. Dan pelukanmu (yang aku rindukan setiap saat) adalah tempat teraman di dunia ini. 🤗💖
+
+Aku ga bisa janji bahwa hubungan kita akan selalu mulus tanpa hambatan. Tapi aku bisa janji bahwa aku akan selalu fight for us, no matter what. Karena cinta kita worth fighting for. 💪❤️
+
+I love you more than words can express, more than actions can show, and more than time can measure. 💕∞
+
+Forever and always yours,
+The luckiest person in the world 🍀💖`
+    ];
+    
+    const randomRomantic = romanticMessages[Math.floor(Math.random() * romanticMessages.length)];
+    document.getElementById('romanticContent').innerHTML = 
+      `<div style="text-align: left; font-size: 1.1em; line-height: 1.8; white-space: pre-line; max-height: none; overflow-y: visible;">${randomRomantic}</div>`;
+    document.getElementById('romanticModal').style.display = 'flex';
+    
+    // Prevent body scroll when modal is open
+    document.body.style.overflow = 'hidden';
+  }
+  
+  function uploadPhoto() {
+    document.getElementById('photoInput').click();
+  }
+  
+  function handlePhotoUpload(event) {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const photoDisplay = document.getElementById('photoDisplay');
+        photoDisplay.innerHTML = `<img src="${e.target.result}" alt="Foto Kita" class="couple-photo">`;
+      };
+      reader.readAsDataURL(file);
+    }
+  }
+  
+  function closeModal(modalId) {
+    document.getElementById(modalId).style.display = 'none';
+    // Restore body scroll when modal is closed
+    document.body.style.overflow = 'auto';
+  }
+  
+  // Close modal when clicking outside
+  window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+      event.target.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+  }
+  
+  // Auto random quote setiap 30 detik
+  setInterval(() => {
+    if (Math.random() > 0.7) { // 30% chance
+      randomQuote();
+    }
+  }, 30000);
+  
+  // Initialize
+  updateDays();
+  setInterval(updateDays, 60000); // Update setiap menit
+  
+  // Easter egg: klik title
+  document.querySelector('h1').onclick = function() {
+    this.style.transform = 'rotate(360deg)';
+    setTimeout(() => {
+      this.style.transform = 'rotate(0deg)';
+    }, 1000);
+  };
+</script>
+</body>
+</html>
